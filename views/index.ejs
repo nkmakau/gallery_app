@@ -28,8 +28,14 @@
   </div>
   <!-- Navbar end -->
 
+
   <div class="container">
-    <h1>Upload Image</h1>
+    <h1>Image Upload </h1>
+    <% if (typeof msg !== 'undefined'){ %>
+    <%= msg %>
+    <% } else {%>
+    <%= msg='' %>
+    <% } %>
     <!-- upload form -->
     <form action="/upload" method="POST" enctype="multipart/form-data">
       <div class="file-field input-field">
@@ -44,6 +50,14 @@
       <button type="submit" class="btn">Submit</button>
     </form>
     <!-- Upload form end  -->
+    <hr>
+    <br>
+    <% if (typeof file !== 'undefined'){ %>
+    <img src="<%= file %>" class="responsive-img">
+    <% } else {%>
+    <%= file='' %>
+    <% } %>
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
