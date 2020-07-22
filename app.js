@@ -31,6 +31,9 @@ app.set('view engine', 'ejs');
 // Set a static folder
 app.use(express.static('public'));
 
+// body parser middleware
+app.use(express.json())
+
 // Define the routes
 app.use('/', indexRouter);
 app.use('/image', imageRouter)
