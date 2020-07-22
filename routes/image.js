@@ -30,6 +30,17 @@ router.put('/:id', (req,res)=>{
     })
  
  })
+
+ // Delete route
+router.delete('/:id', (req,res)=>{
+  
+    Photo.deleteOne({_id:req.params.id}, (error)=>{
+        if (error){
+            console.log(error)
+        }
+        res.send('Success')
+    })
+ })
  
 
 module.exports = router

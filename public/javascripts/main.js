@@ -17,3 +17,18 @@ $(document).ready(function(){
         })
     })
  })
+
+ $('#delete').on('click',function(){
+    var id = $('#delete').attr('data-id');
+    $.ajax({
+        method: 'delete',
+        url: '/image/' + id,
+        success: function(response){
+            window.location.href= '/';
+        },
+        error: function(err){
+            console.log(err)
+        }
+    })
+
+})
