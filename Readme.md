@@ -29,7 +29,7 @@ https://mapichaapp.herokuapp.com/
 * [CSS](https://github.com/topics/css3)
 * Express
 * [jQuery](https://github.com/topics/javascript)
-* mondodb
+* mongodb
 * markdown
 
 
