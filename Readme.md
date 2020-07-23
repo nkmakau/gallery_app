@@ -10,7 +10,7 @@ This project is a web application for Gallery App the applications show cases us
 
 
 ## Live Page 
-https://_gallery_app.herokuapp.com/
+https://mapichaapp.herokuapp.com/
 
 
 ## Installation / Setup instruction
